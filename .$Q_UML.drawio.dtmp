@@ -1,0 +1,29 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/27.0.9 Chrome/134.0.6998.205 Electron/35.4.0 Safari/537.36" version="27.0.9">
+  <diagram name="Q-UML - Diagrama de Clases" id="JxEv4H2KvaSaJ2ABPtdu">
+    <mxGraphModel dx="1368" dy="2012" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="2" value="&lt;b&gt;RSPProtocol&lt;/b&gt;&#xa;q: QuantumRegister&#xa;c: ClassicalRegister&#xa;qc: QuantumCircuit&#xa;&#xa;preparar_estado_bell()&#xa;medir_en_base_arbitraria(theta, phi)&#xa;correcciones_en_bob(theta, phi)&#xa;simular_circuito(shots)&#xa;calcular_fidelidad(counts, shots)&#xa;RSP(theta, phi, shots)" style="swimlane;childLayout=stackLayout;horizontal=1;" parent="1" vertex="1">
+          <mxGeometry x="60" y="60" width="320" height="260" as="geometry">
+            <mxRectangle x="60" y="60" width="230" height="170" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3" value="&lt;b&gt;FidelidadEvaluator&lt;/b&gt;&#xa;evaluar_sobre_esfera_bloch()&#xa;graficar_fidelidad()" style="swimlane;childLayout=stackLayout;horizontal=1;" parent="1" vertex="1">
+          <mxGeometry x="460" y="60" width="260" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="4" style="endArrow=block;endFill=1;" parent="1" source="3" target="2" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="tIc2XU-TBPu9VMzMq2gC-32" value="User" style="shape=folder;fontStyle=1;tabWidth=110;tabHeight=30;tabPosition=left;html=1;boundedLbl=1;labelInHeader=1;container=1;collapsible=0;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="70" y="-300" width="200" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="tIc2XU-TBPu9VMzMq2gC-33" value="&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;+&amp;nbsp;&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;+ Calcula fidelidad para cada par $\theta&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;$&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;+&lt;/span&gt;&lt;/div&gt;" style="html=1;strokeColor=none;resizeWidth=1;resizeHeight=1;fillColor=none;part=1;connectable=0;allowArrows=0;deletable=0;whiteSpace=wrap;align=left;" vertex="1" parent="tIc2XU-TBPu9VMzMq2gC-32">
+          <mxGeometry width="200" height="126" relative="1" as="geometry">
+            <mxPoint y="30" as="offset" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
